@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhijay's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+      <a href="#profile" style="font-size: 30px;">&lt;devABJ/&gt;</a>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburgernav">
+      <a href="#profile" style="font-size: 25px;">&lt;devABJ/&gt;</a>
+      <div class="hamburgermenu">
+        <div class="hamburgericon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="navmenu">
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+
+    </nav>    
+    <section id="profile">
+      <div class="section__profile-pic-container">
+        <img src="./assets/profile-pic.jpg" class="profile-pic" alt="my picture" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Computer Science Student ✌🏼</h1>
+        <p class="section__text__p2">Hi, I'm Abhijay Tilak Singh.</br>
+          A passionate Computer Science student based in India.📍
+        </p>
+        <div class="btn-container">
+          <button class="btn btn1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/abhijay-tilak-singh-082136258/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/abhijayts')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="techstack-container">
+      <div class="techstack">
+        <h2 class="techstack-heading">Tech Stack</h2>
+        <div class="techstack-icons-container">
+          <div>
+            <img class="tsicons" src="./assets/html.svg" alt="html logo">
+          </div>
+          <div>
+            <img class="tsicons" src="./assets/css.svg" alt="css logo">
+          </div>
+          <div>
+            <img class="tsicons" src="./assets/js.svg" alt="js logo">
+          </div>
+          <div>
+            <img class="tsicons" src="./assets/react.svg" alt="react logo">
+          </div>
+          <div>
+            <img class="tsicons" src="./assets/java.png" alt="java logo">
+          </div>
+          <div>
+            <img class="tsicons" src="./assets/c++.png" alt="c++ logo">
+          </div>
+          <div>
+            <img class="tsicons" src="./assets/python.png" alt="python logo">
+          </div>
+          <div>
+            <img class="tsicons" src="./assets/github.png" alt="github logo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="sectionintro">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="section__pic-container"
+          />
+        <p class="text-container">
+          I am a sophomore <span>Computer Science student</span> at <span>VIT University</span> with a passion for creating user-friendly and 
+          visually appealing web applications. I am eager to contribute skills in <span>HTML, CSS, 
+          JavaScript, React, Java, C++, Python and familiar with build tools like Matlab, R. </span> 
+          My key skills include leadership qualities, team player, problem solver, fluent in Hindi, English and Japanese.
+        </p>
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="sectionintro">Check this out!</p>
+      <h1 class="title">My Projects</h1>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project-1.png"
+            alt="Project 7"
+            class="project-img"
+          />
+        </div>
+        <div class="project-info">
+          <h2 class="project-title">CodeSpindle Idea</h2>
+          <p class="project-description">This is an idea for the CodeSpindle educational website by my revered professor Dr. Satish C.J.</p>
+          <div class="techstack-project">
+            <img src="./assets/html.svg" alt="">
+            <img src="./assets/css.svg" alt="">
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn2 project-btn"
+              onclick="window.open('https://github.com/abhijayts/codespindle_idea')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn2 project-btn"
+              onclick="window.open('https://abhijayts.github.io/codespindle_idea/')"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="sectionintro">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:abhijay.tilak@gmail.com">abhijay.tilak@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/abhijay-tilak-singh-082136258/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &#169; 2024 <span>Abhijay Tilak Singh</span>. | All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
