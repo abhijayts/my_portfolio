@@ -1,2 +1,2 @@
 ﻿# my_portfolio
-This is an attempt to create a CV for myself.
+This is an attempt to create a portfolio for myself.
